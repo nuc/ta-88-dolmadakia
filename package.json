@@ -1,4 +1,14 @@
 {
+  "name": "ta-88-dolmadakia",
+  "version": "1.0.0",
+  "description": "A dot graph, displaying the different storylines of the Choose Your Own Adventure kind of book from Eugenios Trivizas, \"Τα 88 Ντολμαδάκια\".",
+  "main": "dolmadakia.js",
+  "repository": "git@github.com:nuc/ta-88-dolmadakia.git",
+  "author": "Georgios Giannoutsos Barkas <contact@nuc.gr>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node dolmadakia.js > dolmadakia.dot && cat dolmadakia.dot | dot -Tsvg > graph.svg"
+  },
   "dependencies": {
     "papaparse": "^4.6.0"
   }
