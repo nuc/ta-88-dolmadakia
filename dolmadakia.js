@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const Papa = require('papaparse')
 
-const csvData = fs.readFileSync(path.join(__dirname, 'ntolmadakia.csv'), 'utf-8')
+const csvData = fs.readFileSync(path.join(__dirname, 'dolmadakia.csv'), 'utf-8')
 
 const addRow = (from, to) => {
   if (to === '-') {
