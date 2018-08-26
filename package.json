@@ -7,7 +7,10 @@
   "author": "Georgios Giannoutsos Barkas <contact@nuc.gr>",
   "license": "MIT",
   "scripts": {
-    "build": "node dolmadakia.js > dolmadakia.dot && cat dolmadakia.dot | dot -Tsvg > graph.svg"
+    "parse-csv": "node dolmadakia.js > dolmadakia.dot",
+    "build-graph": "cat dolmadakia.dot | dot -Tsvg > graph.svg",
+    "build-graph-png": "cat dolmadakia.dot | dot -Tpng > graph.png",
+    "build": "parse-csv && build-graph"
   },
   "dependencies": {
     "papaparse": "^4.6.0"
