@@ -13,6 +13,6 @@
     "build": "parse-csv && build-graph"
   },
   "dependencies": {
-    "papaparse": "^4.6.0"
+    "papaparse": "^5.2.0"
   }
 }
